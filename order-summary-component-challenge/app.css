@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  html {
+      font-family: 'Red Hat Display', serif;
+      font-size: 16px;
+  }
+
+  body {
+    min-height: 100vh;
+    background: url("images/pattern-background-desktop.svg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  .panel {
+display: flex;
+flex-direction: column;
+background-color: white;
+text-align: center;
+justify-content: center;
+border-radius: 1em;
+overflow:hidden;
+max-width: 450px;
+margin: 0 1em;
+}
+
+#header-image {
+background-size: cover;
+}
+
+.header {
+    font-size: 1.75em;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin: 1.5em 2em 0;
+}
+
+.description {
+    color: hsl(224, 23%, 55%);
+    line-height: 1.75;
+    margin: 1em 3em 0.5em;
+  
+}
+
+.pricing-section {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    justify-content:space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 0.5em 2em 1em;
+    border-radius: 1em;
+}
+
+.icon-music {
+    margin-right: 1em;
+}
+
+.annual-plan-section {
+    text-align: left;
+    margin-right: auto;
+    line-height: 1.75;
+}
+
+#plan {
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+}
+
+#price {
+   color: hsl(224, 23%, 55%);
+}
+
+.change-button {
+    font-weight: 800;
+    color: hsl(245, 75%, 52%);
+    transition: color 0.2s;
+}
+
+.change-button:hover, .change-button:focus {
+    color: rgb(118, 108, 241);
+}
+
+.order-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.payment-button {
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 800;
+    color: hsl(225, 100%, 98%);
+    text-decoration: none;
+    margin: 0.5em 2em 0.5em;
+    padding: 1em;
+    border-radius: 1em;
+    transition: 0.2s;
+}
+
+.payment-button:hover, .payment-button:focus {
+    background-color: rgb(118, 108, 241);
+}
+
+.cancel-button {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    margin: 0.5em 2em 1.5em;
+    padding: 1em;
+    font-weight: 800;
+    transition: 0.2s;
+}
+
+.cancel-button:hover, .cancel-button:focus {
+    color: hsl(223, 47%, 23%);
+}
