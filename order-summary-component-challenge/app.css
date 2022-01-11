@@ -82,6 +82,7 @@ border-radius: 1em;
 overflow:hidden;
 max-width: 450px;
 margin: 0 1em;
+box-shadow: 0.5em 2em 2.5em hsla(224, 17%, 49%, 0.205);
 }
 
 #header-image {
