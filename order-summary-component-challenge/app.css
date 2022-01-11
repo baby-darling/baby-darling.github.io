@@ -156,6 +156,7 @@ background-size: cover;
     padding: 1em;
     border-radius: 1em;
     transition: 0.2s;
+    box-shadow: 0.3em 1em 1em hsla(224, 17%, 49%, 0.322);
 }
 
 .payment-button:hover, .payment-button:focus {
