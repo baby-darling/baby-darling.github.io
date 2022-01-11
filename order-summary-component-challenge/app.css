@@ -166,12 +166,24 @@ background-size: cover;
 .cancel-button {
     color: hsl(224, 23%, 55%);
     text-decoration: none;
-    margin: 0.5em 2em 1.5em;
-    padding: 1em;
+    margin: 1.5em 34% 2.5em;
     font-weight: 800;
     transition: 0.2s;
 }
 
 .cancel-button:hover, .cancel-button:focus {
     color: hsl(223, 47%, 23%);
+}
+
+@media(max-width:350px){
+.pricing-section {
+    justify-content: center;
+    flex-direction: column;
+}
+.annual-plan-section {
+    margin: 0;
+}
+.icon-music {
+    margin: 0;
+}
 }
