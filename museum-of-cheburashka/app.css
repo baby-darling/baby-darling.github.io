@@ -64,6 +64,26 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:758px) {
+    #header img {
+ width: 1000px;
+}
+}
+
 #icon {
     opacity: 0.1;
     width: 60px;
