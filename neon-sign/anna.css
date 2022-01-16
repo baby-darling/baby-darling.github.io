@@ -1,0 +1,85 @@
+:root {
+    --clr-neon: rgb(255, 161, 20);
+    --clr-bg: rgb(49, 32, 32);
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--clr-bg);
+    color: var(--clr-neon);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.neonButton {
+object-fit: contain;
+font-size: 4rem;
+letter-spacing: 0.1em;
+color: var(--clr-neon);
+display: flex;
+cursor: pointer;
+text-decoration: none;
+border: var(--clr-neon) 0.125em solid;
+border-radius: 0.25em;
+
+text-shadow:
+0 0 0.125em rgb(148, 89, 0),
+0 0 .45em currentColor;
+
+box-shadow: 0 0 1em 0 var(--clr-neon), inset 0 0 1em 0 var(--clr-neon);
+position: relative;
+
+transition: background-color 100ms linear;
+-webkit-animation:spin 4s linear infinite;
+-moz-animation:spin 4s linear infinite;
+animation:spin 10s linear infinite;
+}
+
+.neonButton::after {
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 1em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: all 100ms ;
+}
+
+.neonButton:hover, .neonButton:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+}
+
+.neonButton:hover::before, .neonButton:focus::before {
+opacity: 1;
+transform: perspective(1em) rotateX(40deg) scale(1, 0.5);
+}
+
+.neonButton:hover::after,.neonButton:focus::after {
+    opacity: 0.8;
+}
+
+img {
+width: 30vw;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
