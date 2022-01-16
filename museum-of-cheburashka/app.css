@@ -7,6 +7,10 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+.row {
+    margin: 0;
+}
+
 .blurb h2 {
     color: #ea1c2c;
     font-weight: 100;
